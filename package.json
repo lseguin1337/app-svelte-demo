@@ -1,0 +1,27 @@
+{
+  "name": "selte-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@contentsquare/uxanalytics-client": "0.90.3",
+    "@tsconfig/svelte": "^1.0.10",
+    "@uxanalytics/core": "1.15.8",
+    "@contentsquare/app-federation-plugin": "file:./app-federation-plugin",
+    "html-webpack-plugin": "^4.4.1",
+    "svelte": "file:../svelte",
+    "svelte-check": "^1.0.41",
+    "svelte-loader": "^2.13.6",
+    "svelte-preprocess": "^4.2.1",
+    "ts-loader": "^8.0.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}

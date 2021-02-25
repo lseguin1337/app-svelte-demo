@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://frontends.contentsquare.com/@cs-materials/common@0.17.9/build/cs-materials-common.css">
+    <script src="https://frontends.contentsquare.com/@cs-materials/common@0.17.9/build/cs-materials-common.esm.js" type="module"></script>
+    <script src="https://frontends.contentsquare.com/app-federation/poc/remote-entry.js"></script>
+    <script src="https://frontends-dev.contentsquare.com/utils/setup-dev-context.js"></script>
+  </head>
+  <body>
+    <app-workspace></app-workspace>
+  </body>
+  <script>
+    AppRegistry.require('@uxanalytics/core').AppContextFactory.ready
+      .then(() => AppRegistry.import('@uxanalytics/workspace'));
+  </script>
+</html>

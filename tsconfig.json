@@ -1,0 +1,10 @@
+{
+  "extends": "@tsconfig/svelte/tsconfig.json",
+  "compileOnSave": false,
+  "compilerOptions": {
+    "module": "esnext",
+    "sourceMap": false,
+    "lib": ["es2017", "dom"],
+    "importsNotUsedAsValues": "remove"
+  }
+}

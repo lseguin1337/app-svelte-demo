@@ -1,0 +1,20 @@
+{
+  "@angular/core@9.0.7": "AppRegistry.require(\"@angular9\").core",
+  "@angular/common@9.0.7": "AppRegistry.require(\"@angular9\").common",
+  "@angular/common/http@9.0.7": "AppRegistry.require(\"@angular9\").common_http",
+  "@angular/platform-browser-dynamic@9.0.7": "AppRegistry.require(\"@angular9\").platform_browser_dynamic",
+  "@angular/platform-browser@9.0.7": "AppRegistry.require(\"@angular9\").platform_browser",
+  "@angular/platform-browser/animations@9.0.7": "AppRegistry.require(\"@angular9\").platform_browser_animations",
+  "@angular/compiler@9.0.7": "AppRegistry.require(\"@angular9\").compiler",
+  "@angular/router@9.0.7": "AppRegistry.require(\"@angular9\").router",
+  "@angular/forms@9.0.7": "AppRegistry.require(\"@angular9\").forms",
+  "@angular/animations@9.0.7": "AppRegistry.require(\"@angular9\").animations",
+  "@angular/elements@9.0.7": "AppRegistry.require(\"@angular9\").elements",
+  "vue@^2.6.11": "AppRegistry.require(\"vue2\")",
+  "@contentsquare/business-constants@^0.46.2": "AppRegistry.require(\"@contentsquare/business-constants\")",
+  "@contentsquare/uxanalytics-client@*": "AppRegistry.require(\"@contentsquare/uxanalytics-client\")",
+  "@uxanalytics/core@^1.15.4": "AppRegistry.require(\"@uxanalytics/core\")",
+  "lodash@4.17.15": "AppRegistry.require(\"lodash\")",
+  "rxjs@6.4.0": "AppRegistry.require(\"rxjs\").rxjs",
+  "rxjs/operators@6.4.0": "AppRegistry.require(\"rxjs\").operators"
+}
