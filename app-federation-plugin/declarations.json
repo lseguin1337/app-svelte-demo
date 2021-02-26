@@ -13,7 +13,7 @@
   "vue@^2.6.11": "AppRegistry.require(\"vue2\")",
   "@contentsquare/business-constants@^0.46.2": "AppRegistry.require(\"@contentsquare/business-constants\")",
   "@contentsquare/uxanalytics-client@*": "AppRegistry.require(\"@contentsquare/uxanalytics-client\")",
-  "@uxanalytics/core@^1.15.4": "AppRegistry.require(\"@uxanalytics/core\")",
+  "@uxanalytics/core@*": "AppRegistry.require(\"@uxanalytics/core\")",
   "lodash@4.17.15": "AppRegistry.require(\"lodash\")",
   "rxjs@6.4.0": "AppRegistry.require(\"rxjs\").rxjs",
   "rxjs/operators@6.4.0": "AppRegistry.require(\"rxjs\").operators"

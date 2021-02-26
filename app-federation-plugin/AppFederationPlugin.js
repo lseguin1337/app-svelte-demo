@@ -6,7 +6,7 @@ class AppFederationPlugin {
   constructor(options = {}) {
     const externals = this.getExternals();
 
-    this.filename = options.filename || 'remote-entry.js';
+    this.filename = options.filename || 'remote-entry';
     this.remoteEntry = `${__dirname}/remote-entry.js`;
 
     this.externals = [
@@ -62,14 +62,14 @@ class AppFederationPlugin {
     });
 
     compiler.hooks.afterCompile.tap('AppFederationPlugin', compilation => {
-      const remoteEntry = compilation.assets['remote-entry.js'];
+      const assetName = `${this.filename}.js`;
+      const remoteEntry = compilation.assets[assetName];
       if (!remoteEntry) {
         return;
       }
       const code = remoteEntry.source();
       const source = code.replace('__app_federated_dependencies__', JSON.stringify(dependencies));
-      delete compilation.assets['remote-entry.js'];
-      compilation.assets[this.filename] = {
+      compilation.assets[assetName] = {
         source: () => source,
         size: () => source.length,
       };
@@ -78,7 +78,7 @@ class AppFederationPlugin {
 
   transformCompilerOptions(compiler) {
     compiler.options.entry = {
-      'remote-entry': this.remoteEntry,
+      [this.filename]: this.remoteEntry,
     };
 
     if (!compiler.options.externals) {

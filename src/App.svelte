@@ -1,13 +1,13 @@
 <svelte:options tag="app-workspace" />
 
 <script lang="typescript">
-  import { ZoningClient } from '@contentsquare/uxanalytics-client';
-  import { ClientFactory, AppContextFactory } from '@uxanalytics/core';
   import Panel from './Panel.svelte';
 
+  import { ZoningClient } from '@contentsquare/uxanalytics-client';
+  import { ClientFactory, AppContextFactory } from '@uxanalytics/core';
+
   const context = AppContextFactory.get();
-  const zoningClient = ClientFactory.get(ZoningClient as any);
-  // console.log(zoningClient, Panel);
+  const zoningClient: ZoningClient = ClientFactory.get(ZoningClient as any);
   const zonings$ = zoningClient.getZonings(context.projectId);
 </script>
 

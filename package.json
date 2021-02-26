@@ -11,9 +11,7 @@
   "license": "ISC",
   "devDependencies": {
     "@contentsquare/app-federation-plugin": "file:./app-federation-plugin",
-    "@contentsquare/uxanalytics-client": "0.90.3",
     "@tsconfig/svelte": "^1.0.10",
-    "@uxanalytics/core": "1.15.8",
     "html-webpack-plugin": "^4.4.1",
     "svelte": "https://artifactory.csq.fr:443/npm-local/cs-svelte/-/cs-svelte-3.32.4.tgz",
     "svelte-check": "^1.0.41",
@@ -23,5 +21,9 @@
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
+  },
+  "dependencies": {
+    "@contentsquare/uxanalytics-client": "0.90.3",
+    "@uxanalytics/core": "1.15.8"
   }
 }
